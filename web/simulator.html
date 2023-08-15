@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simulator to - Send Truck(Device) Location</title>
+    <style>
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 5px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .button:hover {
+        background-color: #3d8c40;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simulate Sending Truck Location</h1>
+    <button class="button" id="sendLocationBtn">Send Location Data Once</button>
+	  <br>	  <br>
+	  <!--Send Truck(device) location updates to AWS IoT Core-->
+    <button class="button" id="sendLocationEvery5SecBtn">Send Trucks Location Data Every 2 Seconds</button> 
+	  <br>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.978.0.min.js"></script>
+    <script src="js/simulator.js"></script>
+  </body>
+</html>
