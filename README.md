@@ -38,6 +38,26 @@ Allow Actions:<br>
 "dynamodb:GetItem" <br>
 "dynamodb:PutItem" <br>
 "dynamodb:Scan" <br>
-                
 on appropriate resources. 
 
+The Lambda function **FleetSaveWebsocketConnectionId.py** must have this role **FleetSaveWebsocketConnectionId-role** attached to it.<br>
+This must have following permissions:<br>
+LambdaBasicExecutionRole<br>
+AND:<br>
+Allow Actions:<br> 
+"iot:*" <br> 
+"dynamodb:GetItem" <br>
+"dynamodb:PutItem" <br>
+"dynamodb:Scan" <br>
+on appropriate resources. 
+
+The Lambda function **FleetWebsocketConnectionDelete.py** must have this role **FleetWebsocketConnectionDelete-role** attached to it.<br>
+This must have following permissions:<br>
+LambdaBasicExecutionRole<br>
+AND:<br>
+Allow Actions:<br> 
+"iot:*" <br> 
+"dynamodb:GetItem" <br>
+"dynamodb:PutItem" <br>
+"dynamodb:Scan" <br>
+on appropriate resources. 
