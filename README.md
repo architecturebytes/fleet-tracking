@@ -27,3 +27,17 @@ AND:<br>
 Allow Actions:<br> 
 "geo:BatchUpdateDevicePosition" <br> 
 on appropriate resources. 
+
+The Lambda function **FleetLocationSendToClient.py** must have this role **FleetLocationSendToClient-role** attached to it.<br>
+This must have following permissions:<br>
+LambdaBasicExecutionRole<br>
+AND:<br>
+Allow Actions:<br> 
+"iot:*" <br> 
+"execute-api: <br> 
+"dynamodb:GetItem" <br>
+"dynamodb:PutItem" <br>
+"dynamodb:Scan" <br>
+                
+on appropriate resources. 
+
