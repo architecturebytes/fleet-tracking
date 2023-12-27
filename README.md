@@ -34,7 +34,6 @@ This must have following permissions:<br>
 LambdaBasicExecutionRole<br>
 AND:<br>
 Allow Actions:<br> 
-"iot:*" <br> 
 "execute-api: <br> 
 "dynamodb:GetItem" <br>
 "dynamodb:PutItem" <br>
