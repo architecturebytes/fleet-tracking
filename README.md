@@ -19,3 +19,11 @@ Allow Actions:<br>
 "geo:ListDevicePositions"<br> 
 
 on appropriate resources. 
+
+The Lambda function **FleetLocationSave.py** must have this role **LocationSaveRole** attached to it.<br>
+This must have following permissions:<br>
+LambdaBasicExecutionRole<br>
+AND:<br>
+Allow Actions:<br> 
+"geo:BatchUpdateDevicePosition" <br> 
+on appropriate resources. 
