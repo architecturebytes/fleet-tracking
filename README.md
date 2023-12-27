@@ -45,7 +45,6 @@ This must have following permissions:<br>
 LambdaBasicExecutionRole<br>
 AND:<br>
 Allow Actions:<br> 
-"iot:*" <br> 
 "dynamodb:GetItem" <br>
 "dynamodb:PutItem" <br>
 "dynamodb:Scan" <br>
@@ -56,7 +55,6 @@ This must have following permissions:<br>
 LambdaBasicExecutionRole<br>
 AND:<br>
 Allow Actions:<br> 
-"iot:*" <br> 
 "dynamodb:GetItem" <br>
 "dynamodb:PutItem" <br>
 "dynamodb:Scan" <br>
