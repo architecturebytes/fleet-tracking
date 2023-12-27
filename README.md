@@ -29,6 +29,7 @@ Allow Actions:<br>
 on appropriate resources. 
 
 The Lambda function **FleetLocationSendToClient.py** must have this role **FleetLocationSendToClient-role** attached to it.<br>
+This function is invoked by the EventBridge<br>
 This must have following permissions:<br>
 LambdaBasicExecutionRole<br>
 AND:<br>
@@ -41,6 +42,7 @@ Allow Actions:<br>
 on appropriate resources. 
 
 The Lambda function **FleetSaveWebsocketConnectionId.py** must have this role **FleetSaveWebsocketConnectionId-role** attached to it.<br>
+This function is configured in Websockets API Gatway - against connect route <br>
 This must have following permissions:<br>
 LambdaBasicExecutionRole<br>
 AND:<br>
@@ -50,7 +52,8 @@ Allow Actions:<br>
 "dynamodb:Scan" <br>
 on appropriate resources. 
 
-The Lambda function **FleetWebsocketConnectionDelete.py** must have this role **FleetWebsocketConnectionDelete-role** attached to it.<br>
+The Lambda function **FleetWebsocketConnectionDelete.py** must have this role **FleetWebsocketConnectionDelete-role** attached to it.<br> 
+This function is configured in Websockets API Gatway - against disconnect route <br>
 This must have following permissions:<br>
 LambdaBasicExecutionRole<br>
 AND:<br>
