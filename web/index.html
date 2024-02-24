@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body { margin: 0; }
+      #map { height: 100vh; }
+
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 5px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .button:hover {
+        background-color: #3d8c40;
+      }
+
+      .popup-content {  
+        background-color: #ffffff;
+        border: 2px solid #296085;
+        border-radius: 4px;
+        padding: 5px;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        color: #333333;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .popup-content strong {
+        color: #72261e;
+      }
+
+      .leaflet-popup-content {
+        margin: 0; /* Adjust the margin value */
+      }
+    </style>
+  </head>
+  <body>
+    <!--Uncomment this if you want to receive location data via polling the Location Tracker APIs
+    <button onclick="fetchLocationData()">Fetch Location Data - One Time</button>
+    <button onclick="startFetchingDataInterval()">Fetch Location Data Every 5 Seconds</button>
+    -->
+    <button class="button" onclick="websockConnect()">View Truck Fleet in Realtime</button> 
+    
+    <div id="map"></div>
+
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.978.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script src="js/index.js"></script>    
+  
+</body>
+</html>
